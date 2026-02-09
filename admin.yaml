@@ -1,0 +1,13 @@
+services: 
+ s3admin:
+  image: dpage/pgadmin4
+  container_name: 68-s3-admin
+  environment:
+    POSTGRES_USER: ${DATABASE_USER}
+    POSTGRES_PASSWORD: ${DATABASE_PASS}
+    POSTGRES_DB: ${DATABASE_NAME}
+  ports:
+   - ${DATABASE_PORT}
+
+  
+
